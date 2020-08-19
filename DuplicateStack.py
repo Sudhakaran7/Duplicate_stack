@@ -15,4 +15,7 @@ class Solution(object):
 val=Solution()
 n,k,t=map(int,input().split())
 arr=list(map(int,input().split()))
-print(val.containsNearbyAlmostDuplicate(arr,k,t))
+if(val.containsNearbyAlmostDuplicate(arr,k,t)==None):
+  print('False')
+else:
+  print(val.containsNearbyAlmostDuplicate(arr,k,t))
